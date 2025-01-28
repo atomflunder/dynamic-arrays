@@ -19,5 +19,9 @@ int main()
 
     print(&dynamic_array);
 
+    destroy(&dynamic_array);
+
+    print(&dynamic_array);
+
     return 0;
 }

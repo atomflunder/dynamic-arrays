@@ -17,6 +17,7 @@ typedef struct
 
 DynamicArray createEmpty();
 DynamicArray createFromValues(int *array_start, int array_length);
+void destroy(DynamicArray *array);
 void print(DynamicArray *array);
 int length(DynamicArray *array);
 void push(DynamicArray *array, int value);

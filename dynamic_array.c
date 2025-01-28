@@ -27,6 +27,11 @@ DynamicArray createFromValues(int *array_start, int array_length)
     return new;
 }
 
+void destroy(DynamicArray *array)
+{
+    free(array->items);
+}
+
 void _check_allocation(DynamicArray *array)
 {
     if (array->current_size < array->allocated_size)
